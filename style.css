@@ -220,6 +220,25 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
+.btnatyourstep {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: #fdbc05;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    text-align: center;
+}
+
+.btnatyourstep:hover {
+    transform: scale(1.1);
+}
+
 .btn8 {
     display: inline-block;
     padding: .5em 2.5em;
@@ -390,6 +409,22 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--elusive{
 
   background: #b86b65;
+  padding: .25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  display: inline-block;
+  align-self: start;
+  grid-column: -1 / 1;
+  grid-row: 2;
+  text-align: right;
+  position: relative;
+  left: -1.5em;
+  width: calc(100% + 1.5em);
+}
+
+.section__subtitle--atyourstep{
+
+  background: #fdbc05;
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -696,6 +731,35 @@ header {
 
 .hamburgerelusive::before { top: 6px; }
 .hamburgerelusive::after { bottom: 6px; }
+
+/* hamburgeratyourstep */
+
+.hamburgeratyourstep {
+    display: block;
+    position: relative;
+}
+
+.hamburgeratyourstep,
+.hamburgeratyourstep::before,
+.hamburgeratyourstep::after {
+    background: #fdbc05;
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+
+.hamburgeratyourstep::before,
+.hamburgeratyourstep::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburgeratyourstep::before { top: 6px; }
+.hamburgeratyourstep::after { bottom: 6px; }
 
 /* hamburgeral */
 
@@ -1420,6 +1484,50 @@ header {
 }
 
 
+/* footer atyourstep */
+
+.footeratyourstep {
+    background: #111;
+    color: #fdbc05;
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+
+}
+
+.footeratyourstep a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footeratyourstep__link {
+    font-weight: var(--fw-bold);
+}
+
+.footeratyourstep__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footeratyourstep__link:hover {
+    text-decoration: underline;
+}
+
+.social-listatyourstep {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social-list__itematyourstep {
+    margin: 0 .5em;
+}
+
+.social-list__linkatyourstep{
+    padding: .5em;
+}
 
 /* footer IB */
 
